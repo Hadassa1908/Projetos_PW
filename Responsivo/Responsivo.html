@@ -1,0 +1,294 @@
+<!--
+Tema: Melhores Lugares do Mundo
+Colocar link para foto em tamanho grande
+comentário em toda linha de código 
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      /* mesmo usando padding ou border o tamanho não se altera*/
+    }
+
+    .row::after {
+      /* texto que pode ser colocado após */
+      content: "";
+      /* conteúdo vazio */
+      clear: both;
+      /* limpar float .*/
+      display: table;
+      /* elemento table */
+    }
+
+    [class*="col-"]
+
+    /* classe/tamanho da coluna */
+      {
+      float: left;
+      padding: 15px;/*tamanho dos espaçamento interno*/
+    }
+
+    html {
+      font-family: Tahoma, sans-serif;/*fonte que será usada na página*/
+      background-color: #3C096C; /*cor de funda da página*/
+    }
+
+    header {
+      background-color: #7B2CBF;/*Cor do header*/
+      text-align: center;/* Centraliza o texto */
+      border-radius: 10px;/*tamanho da curvatura das pontas*/
+      font-size: 22px;/*tamanho da fonte*/
+      color: #E0AAFF;/*cor da fonte*/
+      padding: 15px; /* define tamanho do espaçamento*/
+    }
+
+    ul {
+      list-style-type: none; /*lista sem marcadores*/
+      margin: 0; /*tamanho da margem*/
+      padding: 0; /*zera o espaçamento da padding*/
+    }
+
+    li {
+      padding: 8px;/* define tamanho do espaçamento*/
+      height: 200px;/*tamanho da altura de cada li*/
+      margin-bottom: 22px;/*tamanho da margem de baixo*/
+      background-color: #E0AAFF; /*cor de fundo*/
+      color: #3C096C;/*cor da fonte*/
+      box-shadow: 10px 10px #9D4EDD;/*sombra do li*/
+    }
+
+    li:hover {
+      background-color: #E0AAFF;/*cor do li no cursor*/
+      box-shadow: 10px 10px 4px #9D4EDD;/*sombra suave e em degradê*/
+      position: relative;/* Define o posicionamento relativo */
+      top: 4px; /* Desloca o item para baixo */
+      left: 15px; /* Desloca o item para a direita */
+    }
+
+    .classeE {
+      background-color: #9D4EDD; /*cor de fundo*/
+      padding: 15px; /*tamanho do espaçamento*/
+      color: #ffffff; /*cor da fonte*/
+      text-align: center; /* Centraliza o texto */
+      font-size: 14px; /* Define o tamanho da fonte*/
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    footer {
+      background-color: #7B2CBF; /*cor de fundo*/
+      color: #E0AAFF; /*cor da fonte*/
+      position: relative; /* Define o posicionamento relativo */
+      width: 100%; /* Define a largura total do rodapé */
+      text-align: center; /* Centraliza o texto */
+      font-size: 30px; /* Define o tamanho da fonte*/
+      padding: 15px; /*tamanho do espaçamento*/
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+      /* For tablets: */
+      .col-s-1 {
+        width: 8.33%;/* Define a largura*/
+      }
+
+      .col-s-2 {
+        width: 16.66%; /* Define a largura*/
+      }
+
+      .col-s-3 {
+        width: 25%; /* Define a largura*/
+      }
+
+      .col-s-4 {
+        width: 33.33%; /* Define a largura*/
+      }
+
+      .col-s-5 {
+        width: 41.66%; /* Define a largura*/
+      }
+
+      .col-s-6 {
+        width: 50%; /* Define a largura*/
+      }
+
+      .col-s-7 {
+        width: 58.33%; /* Define a largura*/
+      }
+
+      .col-s-8 {
+        width: 66.66%; /* Define a largura*/
+      }
+
+      .col-s-9 {
+        width: 75%; /* Define a largura*/
+      }
+
+      .col-s-10 {
+        width: 83.33%; /* Define a largura*/
+      }
+
+      .col-s-11 {
+        width: 91.66%; /* Define a largura*/
+      }
+
+      .col-s-12 {
+        width: 100%; /* Define a largura*/
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      /* For COMPUTER */
+      .col-1 {
+        width: 8.33%; /* Define a largura*/
+      }
+
+      .col-2 {
+        width: 16.66%; /* Define a largura*/
+      }
+
+      .col-3 {
+        width: 25%; /* Define a largura*/
+      }
+
+      .col-4 {
+        width: 33.33%; /* Define a largura*/
+      }
+
+      .col-5 {
+        width: 41.66%; /* Define a largura*/
+      }
+
+      .col-6 {
+        width: 50%; /* Define a largura*/
+      }
+
+      .col-7 {
+        width: 58.33%; /* Define a largura*/
+      }
+
+      .col-8 {
+        width: 66.66%; /* Define a largura*/
+      }
+
+      .col-9 {
+        width: 75%; /* Define a largura*/
+      }
+
+      .col-10 {
+        width: 83.33%; /* Define a largura*/
+      }
+
+      .col-11 {
+        width: 91.66%; /* Define a largura*/
+      }
+
+      .col-12 {
+        width: 100%; /* Define a largura*/
+      }
+    }
+
+    img {
+      height: 150px; /* Define altura para as imagens */
+      width: 280px; /* Define largura para as imagens */
+    }
+  </style>
+</head>
+
+<body> <!-- Abertura do corpo do documento HTML -->
+
+  <header> <!-- Abertura do corpo do documento HTML -->
+    <h1><i>Melhores Lugares para viajar no mundo</i></h1>
+  </header>
+
+  <div class="row"> <!-- Div container principal que agrupa as colunas -->
+    <div class="col-3 col-s-3">
+      <ul> <!-- Início da lista não ordenada -->
+        <li><a href="petra.jfif" target="_blank"> <img src="petra.jfif" alt="PETRA" class="col-" ></a></li>
+        <li><a href="muralha_china.jfif" target="_blank"><img src="muralha_china.jfif" alt="GRANDE MURALHA DA CHINA"></a></li>
+        <li><a href="coliseu.jfif" target="_blank"><img src="coliseu.jfif" alt="COLISEU"></a></li>
+        <li><a href="taj_mahal.jfif" target="_blank"><img src="taj_mahal.jfif" alt="TAJ MAHAL"></a></li>
+        <li><a href="cristo_redentor.jfif" target="_blank"><img src="cristo_redentor.jfif" alt="CRISTO REDENTOR"></a></li>
+        <li><a href="chichén_itzá.jfif" target="_blank"><img src="chichén_itzá.jfif" alt="CHINCHÉN ITZÁ"></a></li>
+        <li><a href="machu_picchu.jfif" target="_blank"><img src="machu_picchu.jfif" alt="MACHU PICCHU"></a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-s-9">
+      <ul> <!-- Início da lista não ordenada -->
+        <li>
+          <h1>Petra</h1>
+          <p>Petra é uma cidade histórica esculpida diretamente nas rochas rosadas do deserto na Jordânia. Construída
+            pelos nabateus há mais de dois mil anos, a cidade era um ponto de encontro de rotas comerciais antigas no
+            Oriente Médio.</p>
+        </li>
+        <li>
+          <h1>Grande Muralha da China</h1>
+          <p>A Grande Muralha da China é uma gigantesca fortificação de pedra e terra construída ao longo de vários
+            séculos por imperadores chineses. Ela se estende por milhares de quilômetros por montanhas e desertos para
+            defender o território de invasões estrangeiras.</p>
+        </li>
+        <li>
+          <h1>Coliseu</h1>
+          <p>O Coliseu é um enorme anfiteatro de pedra localizado em Roma, na Itália, construído no século I d.C. O
+            local recebia lutas de gladiadores e espetáculos públicos para milhares de pessoas, sendo o maior símbolo do
+            Império Romano ainda de pé.</p>
+        </li>
+        <li>
+          <h1>Taj Mahal</h1>
+          <p>O Taj Mahal é um magnífico mausoléu de mármore branco construído na Índia entre 1631 e 1653. O imperador
+            Shah Jahan mandou erguer a obra em homenagem à sua esposa favorita, tornando-se um símbolo eterno de amor e
+            da arquitetura mogol.</p>
+        </li>
+        <li>
+          <h1>Cristo Redentor</h1>
+          <p>O Cristo Redentor é uma imensa estátua de Jesus Cristo com os braços abertos no alto do morro do Corcovado,
+            no Rio de Janeiro. Inaugurado em 1931, o monumento de trinta metros de altura é um dos cartões-postais mais
+            famosos do Brasil.</p>
+        </li>
+        <li>
+          <h1>Chichén Itzá</h1>
+          <p>Chichén Itzá é uma antiga cidade da civilização maia situada na península de Iucatã, no México. A sua
+            construção mais famosa é a pirâmide de Kukulcán, que reflete o avançado conhecimento dos maias em astronomia
+            e matemática.</p>
+        </li>
+        <li>
+          <h1>Machu Picchu</h1>
+          <p>Machu Picchu é uma cidade inca construída no alto da Cordilheira dos Andes, no Peru, durante o século XV.
+            Conhecida como a cidade perdida dos incas, ela impressiona pelas grandes pedras encaixadas perfeitamente sem
+            o uso de cimento.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-3 col-s-12">
+      <div class="classeE">
+        <h1><b>Curiosidades</b></h1>
+        <h2><I>A Grande Muralha da China</I></h2>
+        <p>Caminhar sobre as pedras milenares da Muralha da China passa a sensação de estar em uma fortaleza imovível, mas o segredo da sua resistência está na culinária local. Durante a Dinastia Ming, os engenheiros misturaram arroz pegajoso (glutinoso) à argamassa de cal extinta. A amilopectina do arroz criou uma reação química com o carbonato de cálcio que selou as frestas com uma firmeza tão impressionante que, até hoje, plantas e ervas daninhas não conseguem crescer entre os blocos em vários trechos.</p>
+        <h2>Petra (Jordânia)</h2>
+        <p>Ao cruzar o estreito cânion do Siq e dar de cara com a fachada entalhada em rocha rosa, a maioria dos visitantes acredita estar diante de uma cidade tradicional. Na verdade, os nabateus construíram Petra para ser um imenso oásis de engenharia hidráulica no deserto. A cidade contava com um sistema invisível de aquedutos, represas e cisternas subterrâneas capazes de armazenar milhões de litros de água da chuva. Isso permitia que Petra vendesse água potável a caravanas do Oriente Médio, enriquecendo a civilização em meio ao árido deserto jordaniano.</p>
+        <h2>Taj Mahal (Índia)</h2>
+        <p>Admirar a simetria perfeita do Taj Mahal ao amanhecer é uma das experiências mais marcantes de uma viagem à Índia. No entanto, o monumento esconde um segredo sob suas fundações: ele é sustentado por poços de madeira de ébano e mogno. Para evitar que o peso do mármore afundasse no solo úmido das margens do rio Yamuna, os construtores ergueram uma base de madeira que precisa se manter constantemente molhada para não rachar. O próprio fluxo do rio garante a umidade necessária para que a madeira continue rígida e sustente o mausoléu há séculos.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer> <!-- Início da seção do rodapé -->
+    <p>© 2026 Hadassa / ETEC</p>
+  </footer>
+
+</body>
+
+</html>

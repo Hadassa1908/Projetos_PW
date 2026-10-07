@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body{background-image: url(fundo_index.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+        }
+        #título{text-align: center;
+            color: rgb(23, 25, 182);
+            font-size: 150px;
+            width:1500px;
+            margin:100px 200px;
+        }
+        #tudo{
+            width: 1000px;
+            height: 100px;
+            line-height: 80px;
+            background-color: #17009c;
+            border: 1px #0d0058;
+            margin: 0 auto; 
+			border-radius: 5px;
+        }
+        ul.menu{
+            text-align: center;
+        }
+        ul.menu li{
+            display: inline-block; /* horizontal */
+            margin: 10px; 
+            width: 100px;
+        }
+        ul.menu li a{
+            width: 150px;
+            background-color: #8de4ff;
+            border-radius: 5px;
+            padding: 6px 10px;
+            color:#0d0058;
+            box-shadow:
+			0 4px 0 #ffffff,
+			0 8px 15px rgba(0,0,0,0.25);
+			transition: all 0.15s ease; 
+        }
+        ul.menu li a:hover{
+            transform: translateY(4px);
+  			box-shadow:
+			0 1px 0 #222,
+			0 3px 8px rgba(0,0,0,0.2);
+        }
+        #título:hover{text-shadow:5px 5px 15px #ffffff ;}
+        #tudo:hover{box-shadow: 5px 5px 15px;}
+
+        @media screen and (max-width: 400px) {
+            #tudo, #menu, #título {   
+        width: 100%;
+        padding: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="tudo">
+        <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Italia.html">Itália</a></li>
+        <li><a href="Japão.html">Japão</a></li>
+        <li><a href="México.html">México</a></li>
+        <li><a href="França.html">França</a></li>
+    </ul>
+    </div>
+    <div id="título"><i><b>Conheça a culinária e alguns pratos de alguns países que iram participar da copa do mundo</b></i></div>
+
+</body>
+</html>

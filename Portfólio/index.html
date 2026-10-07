@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: Arial;
+    padding: 10px;
+    background: #74074c;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #C11C84;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #3b0026;
+}
+
+.menu a {
+    float: right; 
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover { 
+    background-color: #ffadc0;
+    color: #3b0026;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+	}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #C11C84;
+    padding-left: 20px;
+}
+
+.class1 {
+    background-image:url(escola.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+	height:50%;
+    padding: 20px;
+}
+
+.class2{
+    background-image:url(Códigos\ .jpeg);
+    background-repeat:no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+    padding:20px;
+}
+
+.card {
+    background-color: #ffadc0;
+    padding: 20px;
+    margin-top: 20px;
+	height:40%
+}
+
+.row:after {	
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #C11C84;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><i>Meu Portfólio</i></h1>
+  <p>Meus trabalhos</p>
+</div>
+
+<div class="menu">
+  <a href="paises_copa/Index.html">Trabalho 4</a>
+  <a href="Futebol/home.html">Trabalho 3</a>
+  <a href="Peixe/PEIXE@.html">Trabalho 2</a>
+  <a href="Copa_2/Index.html">Trabalho 1</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><i>Minha Formação</i></h2>
+      <h5>ETEC Ilza do Nascimento Pintus</h5>
+      <div class="class1" style="height:500px;"></div>
+      <p>Sobre minha formação...</p>
+      <p>Atualmente, eu faço o ensino médio integrado ao técnico em DS(Desenvolvimento de Sistema), na ETEC Ilza do Nascimento Pintus, estou no terceiro bimestre do primeiro ano e já fiz alguns trabalhos e projetos na área de DS.</p>
+    </div>
+    <div class="card">
+      <h2>Alguns códigops que aprendi...</h2>
+      <h5>Todos foram feitos no Visual Studio Code </h5>
+      <div class="class2" style="height:500px; background-size:100%;"></div>
+      <p>Os códigos apresentados são de HTML e CSS para criar e estilizar uma página da web. Eles definem o plano de fundo com uma imagem, configuram um título centralizado, um menu de navegação horizontal com efeitos ao passar o mouse (hover), um rodapé com cor de fundo e texto centralizado, além de utilizar media queries para tornar a página responsiva, adaptando o layout para telas menores, como tablets e celulares. Dessa forma, o site fica mais organizado, bonito e acessível em diferentes dispositivos. </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2><i>Mais sobre mim...</i></h2>
+      <p>Tenho 15 anos, faço aniversário dia 19 de agosto, me considero uma menina colérica e introvertida. Sei tocar piano e alguns dos meus hobbies preferidos é ler e maratonar animes. </p>
+    </div>
+    <div class="card">
+        <h2><i>Minhas habilidades...</i></h2>
+        <p>Sou uma garota proativa quando quero fazer algo, sei organizar e comunicar bem todas as ideias e dúvidas que tenho, acredito que independente do relacionamento reciprocidade é importante e isso se aplica ao trabalho em equipe, sou uma pessoa que gosta de ser ouvida e se eu for ouvida serei recripróca e irei ouvi-los também. Me considero uma pessoa responsável que respeita eficiência e prazos, já que prazos foram feitos para serem compridos. Sei usar Excel, Word e um pouco de Power BI. Falo inglês e meu nível é intermediário.</p>
+    </div>
+    <div class="card">
+        <h3>E-mail</h3>
+        <p>hadassagarciadesouzasoueu
+            @gmail.com</p>
+      </div>
+    <div class="card">
+        <h3>Número</h3>
+        <p>(12) 99101-8706 </p>
+      </div>
+    <div class="card">
+        <h3>Siga-me no Instagram</h3>
+        <p>@hadassa_garcia2010</p>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <h2> © 2026 Hadassa Garcia de Souza </h2>
+</footer>
+</body>
+</html>
